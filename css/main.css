@@ -92,7 +92,7 @@ main{
 }
 /* NAV */
 nav{
-    position: absolute;
+    position: sticky;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -103,9 +103,72 @@ nav{
     background-color: steelblue;
     font-family: 'Amatic SC', cursive;
     font-size: 2em;
+    z-index: 5;
 }
 nav p {
     display: inline-block;
     margin-left: 1em;
     margin-right: 1em;
+}
+
+/* ABOUT */
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-card {
+    /* background-color: white; */
+    width: 55vw;
+    height: 50vh;
+    position: relative;
+}
+.buttonContainer{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.about-pic{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    transform: translateX(-50px);
+    background-color: green;
+    left: 0;
+}
+.tabContainer{
+    width: 100%;
+    height: 350px;
+}
+.tabContainer .buttonContainer{
+    height: 15%;
+    margin-right: 3em;
+}
+.tabContainer .buttonContainer button{
+    width: 25%;
+    height: 100%;
+    float: left;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: #eee;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+
+}
+.tabContainer .buttonContainer button:hover{
+    background-color: #d7d4d4;
+}
+.tabContainer .tabPanel{
+    height: 85%;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding-top: 105px;
+    font-family: sans-serif;
+    font-size: 22px;
+    display: none;
 }
