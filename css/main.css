@@ -13,6 +13,12 @@ a{
 a:hover{
     color: orange;
 }
+h2{
+    font-family: 'Amatic SC', cursive;
+    font-size: 3em;
+    padding-top: 5%;
+    margin: 0;
+}
 
 .fa-linkedin:hover{
     color: #2867B2;
@@ -29,7 +35,7 @@ nav a:hover{
 }
 
 header, section {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
 }
 /* HEADER */
@@ -181,4 +187,30 @@ nav p {
     min-height: 50%;
     background-color: red;
     padding-left: 30%;
+}
+/* PROJECTS */
+#projects{
+    text-align: center;
+}
+
+.projects-grid{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.project{
+    height: 300px;
+    width: 300px;
+    background-color: green;
+    margin: 3%;
+}
+
+/* FOOTER */
+footer{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
