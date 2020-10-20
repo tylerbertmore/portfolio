@@ -23,7 +23,7 @@
             <div class="header-btns">
                 <a href="#projects" class="projects-link">Projects <i class="fas fa-project-diagram"></i></a>
                 <a href="./resume" class="resume-link">Resume <i class="far fa-file-alt"></i></a>
-                <a href="#about" onclick="showPanel(1,'#2196f3')" class="contact-link">Contact <i class="far fa-address-book"></i></a>
+                <a href="#about" class="contact-link">Contact <i class="far fa-address-book"></i></a>
             </div>
             <!-- jumbotron border left -->
             <div id="jumbotron3">
@@ -42,7 +42,7 @@
                 <p>  |  </p>
                 <a href="./resume">Resume</a>
                 <p>  |  </p>
-                <a href="#about" onclick="showPanel(1,'#2196f3')">Contact</a>
+                <a href="#about">Contact</a>
             </div>
             <div>
                 <a href=""><i class="fab fa-github"></i></a>
@@ -52,23 +52,24 @@
         <!-- ABOUT -->
             <section id="about">
                 <div class="about-card">
-                    <div class="tabContainer">
-                        <div class="buttonContainer">
-                            <div class="about-pic"></div>
-                            <button onclick="showPanel(0,'#4caf50')">About</button>
-                            <button onclick="showPanel(1,'#2196f3')">Contact</button>
+                    <div class="about-pic">
+                        <!-- <img src="https://media-exp1.licdn.com/dms/image/C5103AQGA9_J2hkx-DA/profile-displayphoto-shrink_200_200/0?e=1606953600&v=beta&t=mHb0BVJsyFogWnJaZO0L9WuAD2kcjyy49jGqaNzLbkU" alt=""> -->
+                        <div class="mobile-tabs">
+                            <button>About</button>
+                            <button>Contact</button>
                         </div>
-                        <div class="tabPanel">Tab: 1
-                        </div>
-                        <div class="tabPanel">Tab 2:Content</div>
                     </div>
-                    
-                    
+                    <div class="tabs">
+                        <div class="about-pic-pad"></div>
+                        <button>About</button>
+                        <button>Contact</button>
+                    </div>
+
                 </div>
             </section>
             <!-- PROJECTS -->
             <section id="projects">
-                <h2>Projects</h2>
+                <h2>Projects <i class="fas fa-project-diagram"></i></h2>
                 <a href="./projects">View All</a>
                 <div class="projects-grid">
                     <div class="project"></div>
@@ -81,7 +82,7 @@
             </section>
     </main>
     <footer>
-        <p>Copyright Tyler Bertmore 2020</p>
+        <p><i class="far fa-copyright"></i> Copyright Tyler Bertmore 2020</p>
     </footer>
 </body>
 </html>
