@@ -106,7 +106,7 @@ main{
 nav{
     position: sticky;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     top: 0;
     left: 0;
@@ -131,11 +131,11 @@ nav p {
 }
 .about-card {
     /* background-color: white; */
-    width: 65vw;
-    height: 65vh;
+width: 680px;
+height: 500px;
     position: relative;
     background-color: #fff;
-    border-left: orange 10px solid;
+    border-left: green 10px solid;
     display: grid;
     grid-template-columns: 0.4fr 0.6fr 0.9fr 0.9fr;
     grid-template-rows: 0.5fr 0.9fr 0.7fr 0.9fr;
@@ -154,11 +154,11 @@ nav p {
     position: relative;
 }
 .pic img{
-    position: absolulte;
+    /* position: absolulte; */
     width: 275px;
     height: 275px;
     transform: translateY(-40px) translateX(-40px);
-    border: orange 5px solid;
+    border: green 5px solid;
 }
 
 .tabs {
@@ -173,8 +173,7 @@ nav p {
 }
 
 .text2 {
-     grid-area: text2; 
-     overflow: scroll;
+     grid-area: text2;
 }
 
 .button-container{
@@ -182,15 +181,21 @@ nav p {
     grid-template-columns: 50% 50%;
     grid-template-rows: 10vh;
 }
-.button-container button{
+button{
     border:none;
-    background-color: white;
+    background-color: whitesmoke;
     border-top: white 5px solid;
     outline: none;
+    font-size: 2em;
 }
-.button-container button:active{
+.active-btn{
     border-top: green 5px solid;
 }
+
+.hidden {
+    display: none;
+}
+
 /* PROJECTS */
 #projects{
     text-align: center;
