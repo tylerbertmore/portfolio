@@ -4,86 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="./js/app.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script src="https://kit.fontawesome.com/d6e8b20b2b.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Fira+Sans&family=Oxygen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Tyler Bertmore</title>
 </head>
 <body>
+
     <header>
         <div class="jumbotron">
+            <div data-aos-delay="500" data-aos="fade-in" data-aos-duration="1000" id="jumbotron-dropshadow"></div>
+            <div class="jumbotron-top">  
+            <div class="jumbotron-left">
             <div class="jumbotron-text">
-                <h1>Tyler Bertmore</h1>
-                <h3>Software Engineer</h3>
+                    <h1 data-aos="slide-down" data-aos-duration="1000"><span>T</span>yler <span>B</span>ertmore</h1>            
+                    <h5 data-aos="slide-right" data-aos-duration="1250" >Software Engineer</h5>
+
+                </div>
+                
             </div>
-            <div class="header-icons">
-                <a href=""><i class="fab fa-github"></i></a>
-                <a href=""><i class="fab fa-linkedin"></i></a>
+            <div class="jumbotron-right">
+                    <div class="header-icons">
+                    <a data-aos="flip-up" data-aos-duration="1000" href="https://github.com/tylerbertmore"><i class="fab fa-github"></i></a>
+                    <a data-aos="flip-down" data-aos-delay="900"  data-aos-duration="1000" href="https://www.linkedin.com/in/tylerbertmore/"><i class="fab fa-linkedin"></i></a>
+                </div>
             </div>
+        </div>  
+        <div class="jumbotron-bottom">
             <div class="header-btns">
-                <a href="#projects" class="projects-link">Projects <i class="fas fa-project-diagram"></i></a>
-                <a href="./resume" class="resume-link">Resume <i class="far fa-file-alt"></i></a>
-                <a href="#about" class="contact-link">Contact <i class="far fa-address-book"></i></a>
+                <a data-aos="slide-right" data-aos-duration="1000" href="#projects" class="projects-link">Projects <i class="fas fa-project-diagram"></i></a>
+                <a data-aos="slide-up" data-aos-duration="1000" href="./resume" class="resume-link">Resume <i class="far fa-file-alt"></i></a>
+                <a data-aos="slide-left" data-aos-duration="1000" href="#contact" class="contact-link">Contact <i class="far fa-address-book"></i></a>
             </div>
+        </div>
+
             <!-- jumbotron border left -->
-            <div id="jumbotron3">
-            </div>
         </div>
     </header>
 
-    <main>
-        <!-- NAV -->
-        <nav>
-            <div>
-                <h4>Tyler Bertmore</h4>
-            </div>
-            <div>
-                <a href="#projects">Projects</a>
-                <p>  |  </p>
-                <a href="./resume">Resume</a>
-                <p>  |  </p>
-                <a href="#about">Contact</a>
-            </div>
-            <div>
-                <a href=""><i class="fab fa-github"></i></a>
-                <a href=""><i class="fab fa-linkedin"></i></a>
-            </div>
-        </nav>
-        <!-- ABOUT -->
-            <section id="about">
-                <div class="about-card">
-                    <div class="pic">
-                        <img src="https://media-exp1.licdn.com/dms/image/C5103AQGA9_J2hkx-DA/profile-displayphoto-shrink_200_200/0?e=1606953600&v=beta&t=mHb0BVJsyFogWnJaZO0L9WuAD2kcjyy49jGqaNzLbkU" alt="">
-                    </div>
-  <div class="tabs">
-      <div class="button-container">
-        <button id="about-btn" class="active-btn">About</button>
-        <button id="contact-btn">Contact</button>
-      </div>
+<main>
+            <!-- NAV -->
+    <nav>
 
-  </div>
-  <div id="about-text1" class="text">About ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolorum consectetur aliquid veniam deserunt earum debitis laboriosam fuga quam, nemo tenetur modi. Incidunt, temporibus excepturi in cum commodi consequuntur ut quam neque labore aspernatur ipsum quaerat laudantium aliquid aperiam eos.</div>
-  <div id="contact-text1" class="text hidden">Contact ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolorum consectetur aliquid veniam deserunt earum debitis laboriosam fuga quam, nemo tenetur modi. Incidunt, temporibus excepturi in cum commodi consequuntur ut quam neque labore aspernatur ipsum quaerat laudantium aliquid aperiam eos.</div>
-  <div id="about-text2" class="text2"><p>About ipsum dolor sit amet elit. Alias nostrum consequatur suscipit praesentium sed laboriosam odit eaque, molestiae reprehenderit consequuntur, voluptates dignissimos? Corporis ea perspiciatis, ducimus, reprehenderit accusantium asperiores et tenetur dolore harum culpa quasi eaque id fuga earum similique iusto tempora maxime laudantium odit excepturi recusandae? Consequuntur aliquid odit ex esse blanditiis ad sit ratione ipsum repellat! Maxime voluptas, ratione inventore dolorum libero sequi quas tempora quos tempore veniam eos non vel qui reprehenderit sint. Maiores mollitia illum dolor porro totam! Doloribus voluptatem assumenda similique enim iure molestiae consequatur, hic totam </p></div>
-  <div id="contact-text2" class="text2 hidden"><p>Contact ipsum dolor sit amet elit. Alias nostrum consequatur suscipit praesentium sed laboriosam odit eaque, molestiae reprehenderit consequuntur, voluptates dignissimos? Corporis ea perspiciatis, ducimus, reprehenderit accusantium asperiores et tenetur dolore harum culpa quasi eaque id fuga earum similique iusto tempora maxime laudantium odit excepturi recusandae? Consequuntur aliquid odit ex esse blanditiis ad sit ratione ipsum repellat! Maxime voluptas, ratione inventore dolorum libero sequi quas tempora quos tempore veniam eos non vel qui reprehenderit sint. Maiores mollitia illum dolor porro totam! Doloribus voluptatem assumenda similique enim iure molestiae consequatur, hic totam </p></div>
-                </div>
-            </section>
-            <!-- PROJECTS -->
-            <section id="projects">
-                <h2>Projects <i class="fas fa-project-diagram"></i></h2>
-                <a href="./projects">View All</a>
-                <div class="projects-grid">
-                    <div class="project"></div>
-                    <div class="project"></div>
-                    <div class="project"></div>
-                    <div class="project"></div>
-                    <div class="project"></div>
-                    <div class="project"></div>
-                </div>
-            </section>
-    </main>
-    <footer>
-        <p><i class="far fa-copyright"></i> Copyright Tyler Bertmore 2020</p>
-    </footer>
+        <div>
+            <a href="#projects">Projects</a>
+            <p>  |  </p>
+            <a href="./resume">Resume</a>
+            <p>  |  </p>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <!-- ABOUT -->
+        <section id="contact">
+            <div data-aos="fade-in" class="aboutTop">
+                <button class="contact-btn">Contact</button>
+                <button class="about-btn">About</button>
+            </div>
+            <div data-aos="fade-in" class="aboutBody"></div>
+        </section>
+        <!-- PROJECTS -->
+        <section id="projects">
+            <h2>Projects <i class="fas fa-project-diagram"></i></h2>
+            <a href="./projects">View All</a>
+            <div data-aos="fade-in" class="projects-grid">
+                <div class="project"><h3>PokeWizard</h3><div class="project-bottom"></div></div>
+                <div class="project"><h3>Wayfarer</h3><div class="project-bottom"></div></div>
+                <div class="project"><h3>Walk With Me</h3><div class="project-bottom"></div></div>
+                <div class="project"><h3>YurbleGatchi</h3><div class="project-bottom"></div></div>
+                <div class="project"><h3>Name</h3><div class="project-bottom"></div></div>
+                <div class="project"><h3>Name</h3><div class="project-bottom"></div></div>
+
+            </div>
+        </section>
+</main>
+<footer>
+    <p><i class="far fa-copyright"></i> Copyright Tyler Bertmore 2020</p>
+</footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
