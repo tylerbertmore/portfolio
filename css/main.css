@@ -132,6 +132,12 @@ border-left: var(--secondary) 10px solid;
     padding-bottom: 1em;
     border-bottom: lightgray solid 2px;
 }
+
+.jumbotron-fun-icons{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
 .jumbotron-bottom{
     display: flex;
     margin-top: 1em;
@@ -153,7 +159,7 @@ border-left: var(--secondary) 10px solid;
     
 }
 .jumbotron h5{
-margin-top: 0;
+margin-top: 1em;
 margin-left: .5em;
 font-family: 'Roboto', sans-serif;
 
@@ -167,6 +173,9 @@ font-family: 'Roboto', sans-serif;
     font-size: 6rem;
     
 }
+.header-icons a:hover{
+    opacity: .7;
+}
 
 .header-btns{
     display: flex;
@@ -177,6 +186,10 @@ font-family: 'Roboto', sans-serif;
 }
 .header-btns i {
     margin-top: .5em;
+}
+
+.header-btns a:hover{
+    color: var(--primary);
 }
 #contact, #about{
     background-color: var(--light);
@@ -224,7 +237,7 @@ ABOUT
     text-decoration: none;
     border: 1px solid #b3b3b3;
     border-radius: 1em;
-    padding: 1em 2em;
+    padding: 1em;
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 700;
@@ -249,7 +262,7 @@ ABOUT
   
   .about-bottom{
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       text-align: center;
   }
   .about-bottom a {
