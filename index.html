@@ -13,6 +13,10 @@
     <title>Tyler Bertmore</title>
 </head>
 <body>
+    <!--------------------------------------------------->
+    <!--                     NAV                
+    <--------------------------------------------------->
+    
     <nav>
         <ul>
             <li><a class="nav-link" href="/"></a></li>
@@ -22,6 +26,10 @@
             <li><a class="nav-link" href="/resume">Resume</a></li>
         </ul>
     </nav>
+    <!--------------------------------------------------->
+    <!--                HEADER JUMBOTRON                
+    <--------------------------------------------------->
+    
     <header>
         <div class="jumbotron">
             <div data-aos-delay="500" data-aos="fade-in" data-aos-duration="1000" id="jumbotron-dropshadow"></div>
@@ -50,156 +58,135 @@
             </div>
         </div>
 
-            <!-- jumbotron border left -->
+
         </div>
     </header>
 
 <main>
-            <!-- NAV -->
-    
-    <!-- ABOUT -->
+<!--------------------------------------------------->
+<!--                     ABOUT                
+<--------------------------------------------------->
+
         <section id="about">
             <div class="about-container">
-                <h1>Who am I ?</h1>
-                <div class="content">
+                <h1 data-aos="fade-top" data-aos-delay="300" >Who am I ?</h1>
+                <div data-aos="fade-left" data-aos-delay="300" class="content">
                   <p>My name is Tyler and I'm a former teacher turned Developer from Las Vegas, Nevada. I specialize in frontend and backend Javascript, but also have experience in Python. </p>
                   <div class="about-bottom">
-                      <a href="/resume">View my Resume</a>
-                      <a href="#projects">View my Projects</a>
+                      <a data-aos="fade-up" data-aos-delay="500" href="/resume">My Resume <br> <i class="far fa-file-alt"></i></a>
+                      <a data-aos="fade-up" data-aos-delay="600" href="#projects">My Projects <br> <i class="fas fa-project-diagram"></i></a>
         
                   </div>
                 </div>
-                <div class="img"><img src="https://images.unsplash.com/photo-1445966275305-9806327ea2b5?ixlib=rb-0.3.5&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ&amp;s=14a02fab1200216368d682ecaa91e540"/></div>
+                <div data-aos="fade-right" data-aos-delay="300" class="img"><img src="./imgs/aboutme.jpg"/></div>
               </div>
         </section>
-        <!-- PROJECTS -->
+<!--------------------------------------------------->
+<!--                   PROJECTS                
+<--------------------------------------------------->
+
         <section id="projects">
             <div class="projects-grid">
-                <div class="project" data-aos="fade-left">
-                    <div class="project-top">
-                                <img src="./imgs/test-ss.png" alt="Project Screenshot">
-                                <div class="project-img-overlay"  data-aos="fade-up"
-                                data-aos-delay="500" data-aos-duration="1000">
-                                    <div class="project-img-link-container">
-                                        <a class="img-link-gh" href=""><i class="fab fa-github"></i></a>
-                                        <a href="#" class="img-link-deployed">View Online</a>
-                                    </div>
-                                </div>
-                        <div class="project-right">
-                            <div class="project-title"><h2>Capstone</h2></div>
-                            <div class="project-body"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, earum ipsa saepe minima dolorem totam sequi soluta beatae accusamus illum voluptatum sapiente alias non error officiis necessitatibus ex numquam et, possimus magni. Aliquid ipsa, quod quidem tempore odit fugiat distinctio dignissimos neque, repudiandae soluta natus nesciunt, ea vero perferendis illo.</p></div>
+                <div class="project-container-right">
+                    <div class="project-left">
+                        <div  class="sidebar-top"></div>
+                        <div  class="sidebar-bottom"></div>
+                    </div>
+                    <div class="project-center">
+                        <img src="./imgs/wayfarer.png" alt="Wayfarer Screenshot">
+
+                        <div class="project-action">
+                        <a href="/resume">View Live Version</a>
+                        <a href="#projects"><i class="fab fa-github"></i></a>
+
                         </div>
                     </div>
-                    <div class="project-bottom"><h3>Technologies used:</h3>
-                    <ul>
-                        <li>HTML | </li>
-                        <li>CSS | </li>
-                        <li>Javascript | </li>
-                        <li>Python | </li>
-                        <li>Django | </li>
-                        <li>MongoDB | </li>
-                        <li>Express | </li>
-                        <li>React | </li>
-                        <li>Node | </li>
-                        <li>MySQL | </li>
-                        <li>PostGreSQL | </li>
-                        <li>jQuery | </li>
-                        <li>Bootstrap | </li>
-                        <li>Materialize | </li>
+                    <div class="project-right">
+                        <h2>Wayfarer</h2>
+                        <p>Wayfarer is a travel app where users can make posts about destinations around the world. Users can create new posts and comment on others. Full CRUD on Users, Posts, and Comments</p>                       
+                        
+                        <h4>Built With:</h4>
+                        <ul class="project-lang">
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>PostgreSQL</li>
+                            <li>Materialize</li>
+                            <li>Javascript</li>
+                            <li>jQuery</li>
 
-                    </ul>
+                        </ul>
+                        
+
                     </div>
                 </div>
-
-                <div class="project" data-aos="fade-right">
-                    <div class="project-top">
-
-                        <div class="project-right">
-                            <div class="project-title"><h2>Wayfarer</h2></div>
-                            <div class="project-body"><p>A travel application built with Django. Users can make posts about hotspots in cities across the world. Users can also comment on any other hotspot. Made in a team of four during my time at General Assembly </p></div>
-                        </div>
-                        <div class="project-img-overlay-right" data-aos="fade-up"
-                        data-aos-delay="500" data-aos-duration="1000">
-                            <div class="project-img-link-container-right">
-                                <a class="img-link-gh" href=""><i class="fab fa-github"></i></a>
-                                <a href="#" class="img-link-deployed">View Online</a>
+                <div class="project-container-left">
+                    <div class="project-left">
+                        <div class="sidebar-top"></div>
+                        <div   class="sidebar-bottom"></div>
+                    </div>
+                    <div class="project-center">
+                        <img src="./imgs/walk-with-me.png" alt="Wayfarer Screenshot">
+                        <div class="project-action">
+                            <a href="/resume">View Live Version</a>
+                            <a href="#projects"><i class="fab fa-github"></i></a>
+    
                             </div>
-                        </div>
-                                <img src="./imgs/wayfarer.png" alt="Wayfarer Screenshot">
                     </div>
-                    <div class="project-bottom"><h3>Technologies used:</h3>
-                    <ul>
-                        <li>HTML | </li>
-                        <li>CSS | </li>
-                        <li>Javascript | </li>
-                        <li>Python | </li>
-                        <li>Django | </li>
-                        <li>PostGreSQL | </li>
-                        <li>jQuery | </li>
-                        <li>Materialize | </li>
+                    <div class="project-right">
+                        <h2>Walk With Me</h2>
+                        <p>An app to book appointments to walk dogs at shelters. In this example, we have a fictional shelter, known as Rescue Pup.</p>                       
+                        
+                        <h4>Built With:</h4>
+                        <ul class="project-lang">
+                            <li>Javascript</li>
+                            <li>MongoDB</li>
+                            <li>Express</li>
+                            <li>Node</li>
+                            <li>Passport</li>
 
-                    </ul>
+                        </ul>
+                        
+                        
                     </div>
                 </div>
-                <div class="project" data-aos="fade-left">
-                    <div class="project-top">
-                        <div class="project-img-overlay" data-aos="fade-up"
-                        data-aos-delay="500" data-aos-duration="1000">
-                            <div class="project-img-link-container">
-                                <a class="img-link-gh" href=""><i class="fab fa-github"></i></a>
-                                <a href="#" class="img-link-deployed">View Online</a>
+                <div class="project-container-right">
+                    <div class="project-left">
+                        <div class="sidebar-top"></div>
+                        <div class="sidebar-bottom"></div>
+                    </div>
+                    <div class="project-center">
+                        <img src="./imgs/yurblegatchi.png" alt="Wayfarer Screenshot">
+                        <div class="project-action">
+                            <a href="/resume">View Live Version</a>
+                            <a href="#projects"><i class="fab fa-github"></i></a>
+    
                             </div>
-                        </div>
-                        <img src="./imgs/walk-with-me.png" alt="Walk with Me Screenshot">
-                        <div class="img-overlay">
-
-                        </div>
-                        <div class="project-right">
-                            <div class="project-title"><h2>Walk With Me</h2></div>
-                            <div class="project-body"><p>An app that allows users to make appointments to walk dogs at a fictional shelter, Rescue Pup.  </p></div>
-                        </div>
                     </div>
-                    <div class="project-bottom"><h3>Technologies used:</h3>
-                    <ul>
-                        <li>HTML | </li>
-                        <li>CSS | </li>
-                        <li>Javascript | </li>
-                        <li>MongoDB | </li>
-                        <li>Express | </li>
-                        <li>Node | </li>
-                    </ul>
-                    </div>
-                </div>
+                    <div class="project-right">
+                        <h2>Yurblegatchi</h2>
+                        <p>A clone of the hit 90's game 'Tomagatchi'. Uses vanilla Javascript, HTML and CSS and artwork from Neopets.com</p>                       
+                        
+                        <h4>Built With:</h4>
+                        <ul class="project-lang">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
 
-                <div class="project" data-aos="fade-right">
-                    <div class="project-top">
 
-                        <div class="project-right">
-                            <div class="project-title"><h2>Yurblegatchi</h2></div>
-                            <div class="project-body"><p>A fun tamagotchi clone that uses pure HTML, CSS and Javascript. It uses the art for Yurbles from Neopets.com. <br> <br>
-                            *Hint*: Type cheatMenu=true in the console and click on the black dot in the bottom left corner to open a secret cheat menu.</p></div>
-                        </div>
-                                <img src="./imgs/yurblegatchi.png" alt="Yurblegatchi Screenshot">
-                                <div class="project-img-overlay-right" data-aos="fade-up"
-                                data-aos-delay="500" data-aos-duration="1000">
-                                    <div class="project-img-link-container-right">
-                                        <a class="img-link-gh" href=""><i class="fab fa-github"></i></a>
-                                        <a href="#" class="img-link-deployed">View Online</a>
-                                    </div>
-                                </div>
-                    </div>
-                    <div class="project-bottom"><h3>Technologies used:</h3>
-                    <ul>
-                        <li>HTML | </li>
-                        <li>CSS | </li>
-                        <li>Javascript | </li>
-                    </ul>
+                        </ul>
+                        
+
                     </div>
                 </div>
 
             </div>
         </section>
+<!--------------------------------------------------->
+<!--                 CONTACT                
+<--------------------------------------------------->
+
         <section id="contact">
+            <h2>Contact Me</h2>
             <div class="contact-container">
                 <div class="card">
                     <div class="face face1">
@@ -255,9 +242,19 @@
             </div>
         </section>
 </main>
+
+<!--------------------------------------------------->
+<!--                     FOOTER                
+<--------------------------------------------------->
+
 <footer>
     <p><i class="far fa-copyright"></i> Copyright Tyler Bertmore 2020</p>
 </footer>
+
+<!--------------------------------------------------->
+<!--                     SCRIPTS                
+<--------------------------------------------------->
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
