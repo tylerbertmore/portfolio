@@ -631,6 +631,9 @@ ABOUT
     text-decoration: none;
     color: #414141;
 }
+.contact-container a:hover{
+    border-bottom: var(--secondary) 3px solid;
+}
 
 
 /* ---------------------------------------------------
@@ -644,4 +647,100 @@ footer{
     align-items: center;
     background-color: var(--dark);
     color: white;
+}
+
+/* ---------------------------------------------------
+                     MEDIA QUERIES                
+--------------------------------------------------- */
+@media(max-width: 799px) {
+    nav .nav-link{
+        font-size: 1em;
+    }
+    /* Jumbotron Section */
+    .jumbotron{
+        width: 90%;
+        font-size: 1.5rem;
+    }
+    #jumbotron-dropshadow{
+        display: none;
+    }
+    .header-icons{
+        font-size: 5rem;
+    }
+    .jumbotron-bottom{
+        font-size: 1rem;
+    }
+    /* About Section */
+    #about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-container{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+    }
+    .about-bottom{
+        margin: 2em 0;
+    }
+    .img{
+        order: 1;
+        border-left: var(--secondary) 10px solid;
+    }
+    .content{
+        margin: 2em;
+        order: 2;
+    }
+    /* Projects Section */
+
+    .project-container-left, .project-container-right{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20em;
+        background-color: transparent;
+    }
+    .project-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: 2;
+    }
+    .project-center img, .project-action{
+        width: 75%;
+    }
+    .project-right{
+        width: 100%;
+        order: 1;
+    }
+    .project-action a  {
+        font-size: 1em;
+        margin: 2em 0;
+        height: 10%;
+        
+    }
+
+    .project-action i{
+        transform: translateY(-10px);
+    }
+
+    /* Contact Section */
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-container .card .face.face2{
+        transform: translateY(0);
+    }
+    .contact-container .card .face.face1{
+        background-color: #ff0057;
+        transform: translateY(0px);
+    }
+    .contact-container .card{
+        margin: 3em 0;
+    }
+    
 }
