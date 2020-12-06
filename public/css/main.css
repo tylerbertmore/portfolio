@@ -493,6 +493,9 @@ ABOUT
     padding-top: 1em;
     border-top: 2px solid var(--secondary);
 }
+.mobile-action{
+    display: none;
+}
 
 
 /* ---------------------------------------------------
@@ -632,7 +635,7 @@ ABOUT
 
 .contact-container a {
     text-decoration: none;
-    color: #414141;
+    color: var(--primary);
 }
 .contact-container a:hover{
     border-bottom: var(--secondary) 3px solid;
@@ -667,11 +670,14 @@ footer{
     #jumbotron-dropshadow{
         display: none;
     }
+
     .header-icons{
-        font-size: 5rem;
+        font-size: 4rem;
+       
     }
     .jumbotron-bottom{
         font-size: .75rem;
+        display: none;
     }
     /* About Section */
     #about{
@@ -709,38 +715,66 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        order: 2;
         width: 100%;
+        min-height: 200px;
+    }
+    .project-center {
+        order: 1;
+        padding: 0 2em;
     }
     .project-center img, .project-action{
-        width: 100%;
-    }
-    .project-center img {
         display: none;
     }
-    .project-action{
-        padding: 0 2em;
-        min-height: 130px;
-        margin-top: 2em;
+
+    .wayfarer{
+        background-image: url('/imgs/wayfarer.png');
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .helpdesk{
+        background-image: url('/imgs/helpdesk.png');
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .yurblegatchi{
+        background-image: url('/imgs/yurblegatchi.png');
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .mobile-action{
+        display: block;
+    }
+    .mobile-action a{
+        display: block;
+        background-color: var(--light);
+        height: 20px;
+        font-size: 1.25rem;
+        padding: 30px;
+        margin: 1em;
+        border: var(--dark) 1px solid;
+    }
+    .mobile-action a:nth-child(2){
+        background-color: black;
+    }
+    .mobile-action i{
+        font-size: 2rem;
+        
+        color: white;
     }
     .project-right{
         width: 100%;
-        order: 1;
-        min-height: 457px;
+        order: 2;
+        min-height: 680px;
+        padding-bottom: 3em;
     }
     .project-left{
         display: none;
     }
-    .project-action a  {
-        font-size: 1em;
-        margin: 2em 0;
-        height: 10%;
-        
-    }
 
-    .project-action i{
-        transform: translateY(-10px);
-    }
+
 
     /* Contact Section */
     .contact-container{
