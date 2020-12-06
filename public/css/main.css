@@ -708,15 +708,19 @@ footer{
         flex-direction: column;
         align-items: center;
         margin-bottom: 20em;
+        margin-top: 20em;
         background-color: transparent;
         box-shadow: none;
+    }
+    .project-container-left h4:nth-child(2), .project-container-right h4:nth-child(2) {
+        margin-top: 3em;
     }
     .project-center{
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        min-height: 200px;
+        min-height: 250px;
     }
     .project-center {
         order: 1;
