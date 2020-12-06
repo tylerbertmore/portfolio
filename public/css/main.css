@@ -745,7 +745,7 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        
     }
     .contact-container .card .face.face2{
         transform: translateY(0);
