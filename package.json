@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/tylerbertmore/portfolio#readme",
   "dependencies": {
+    "aos": "^2.3.4",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1"
