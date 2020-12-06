@@ -720,6 +720,7 @@ footer{
     }
     .project-action{
         padding: 0 2em;
+        min-height: 130px;
     }
     .project-right{
         width: 100%;
