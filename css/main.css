@@ -388,10 +388,10 @@ ABOUT
     height: 100%;
     display: flex;
     flex-direction: column;
+   
 }
 .project-center{
     width: 55%;
-    min-width: 600px;
     max-width: 600px;
     height: 100%;
     display: flex;
@@ -503,6 +503,9 @@ ABOUT
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+#contact h2{
+    margin-top: 2em;
 }
 .contact-container {
     width: 1000px;
@@ -668,7 +671,7 @@ footer{
         font-size: 5rem;
     }
     .jumbotron-bottom{
-        font-size: 1rem;
+        font-size: .75rem;
     }
     /* About Section */
     #about{
@@ -700,19 +703,30 @@ footer{
         align-items: center;
         margin-bottom: 20em;
         background-color: transparent;
+        box-shadow: none;
     }
     .project-center{
         display: flex;
         justify-content: center;
         align-items: center;
         order: 2;
+        width: 100%;
     }
     .project-center img, .project-action{
-        width: 75%;
+        width: 100%;
+    }
+    .project-center img {
+        display: none;
+    }
+    .project-action{
+        padding: 0 2em;
     }
     .project-right{
         width: 100%;
         order: 1;
+    }
+    .project-left{
+        display: none;
     }
     .project-action a  {
         font-size: 1em;
