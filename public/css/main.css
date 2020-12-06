@@ -724,6 +724,7 @@ footer{
     .project-right{
         width: 100%;
         order: 1;
+        min-height: 457px;
     }
     .project-left{
         display: none;
@@ -745,6 +746,7 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
         
     }
     .contact-container .card .face.face2{
