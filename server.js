@@ -3,9 +3,12 @@ const app = express();
 const path = require('path');
 require('dotenv').config();
 const PORT = process.env.PORT || 5000;
+var enforce = require('express-sslify');
 
 app.set('view engine', 'ejs')
 app.use(express.static(__dirname + '/public'));
+app.use(enforce.HTTPS({ trustProtoHeader: true }));
+
 
 app.get('/', (req, res) => {
   res.render('index')
